@@ -28,6 +28,7 @@
 #include <arpa/inet.h>  // for strcut sockaddr_in, 嵌套包含了socket.h
 #include <sys/socket.h>
 #include <sys/epoll.h>
+#include <fcntl.h>
 
 const int BUF_SIZE = 100;
 const int EPOLL_SIZE = 30;
