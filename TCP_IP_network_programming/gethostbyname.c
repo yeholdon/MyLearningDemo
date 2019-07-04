@@ -2,7 +2,7 @@
  * author: yeholdon
  * email: yeholdon@gmail.com
  * date: 2019.7.2
- * theme: 《TCP/IP 网络编程》的UDP客户器端程序
+ * theme: 《TCP/IP 网络编程》的域名获取IP程序
  */
 
 #include <stdio.h>

@@ -65,7 +65,8 @@ int main(int argc, char *argv[]) {
         // 连接失败
         error_handling("connect() error!");
     }
-    // 4. 循环读取服务器发来的数据，一次只读一个，返回值为读取的字节数，0则表示文件尾
+    // 4. 循环读取服务器发来的数据，一次只读一个，返回值为读取的字节数，0则表示文件尾, read有阻塞和非阻塞两种
+    // 在socket中的read默认在读不到数据的时候会阻塞，这时候是数据还没发来，但是读到文件尾的时候应该返回0.
     while (read_len = read(sock, &message[idx++], 1))
     {
         if (read_len == -1)
