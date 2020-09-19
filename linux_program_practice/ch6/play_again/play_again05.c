@@ -137,4 +137,4 @@ void ctrl_c_handler(int signum)
     printf("tty is reset!\n");
     tty_mode(1);
     exit(1);
-}
+}    
