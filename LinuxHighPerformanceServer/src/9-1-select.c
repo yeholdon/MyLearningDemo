@@ -1,5 +1,6 @@
 #include <libgen.h>	// for basename()
 #include <sys/un.h> // for 
+#include <stdlib.h>
 
 int main(int argc, char* argv[])
 {
@@ -13,8 +14,6 @@ int main(int argc, char* argv[])
 	// set address and port
 	const char* ip = argv[1];
 	int port = atoi(argv[2]);
-
-	struct sockaddr_in address;
 
 
 	return 0;
